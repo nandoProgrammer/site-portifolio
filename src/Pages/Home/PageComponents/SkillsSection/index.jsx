@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 
-import { WrapperSkills, ButtonItem } from './style'
+import TitleSection from '../../../../Components/TitleSection';
+
+import { WrapperSkillsButton, WrapperSkills, ButtonItem, BoxTechnology, CircleBoxTechnology, TitleTechnology } from './style'
 
 let skills = [
     {
@@ -16,7 +18,7 @@ let skills = [
     {
         id: 2,
         name:'Mobile',
-        technologies: ['React-native']
+        technologies: ['React Native']
     }
 
 ];
@@ -32,8 +34,11 @@ const SkillsSection = () => {
 
 
     return (
-        <>
-            <WrapperSkills>
+        <>  
+            <TitleSection>
+                Minhas Habilidades
+            </TitleSection>
+            <WrapperSkillsButton>
                 {
                     skills.map((skill) => (
                         <>
@@ -41,12 +46,15 @@ const SkillsSection = () => {
                         </>
                     ))
                 }
-            </WrapperSkills>
+            </WrapperSkillsButton>
             <WrapperSkills>
                 {
                     actualSkill['technologies'].map((item) => (
                         <>
-                           <span>{item}</span>
+                           <BoxTechnology>
+                               <CircleBoxTechnology />
+                               <TitleTechnology>{item}</TitleTechnology>
+                           </BoxTechnology>
                         </>
                     ))
                 }

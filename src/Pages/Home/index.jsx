@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Header from '../../Components/Header'
-import SectionAboutMe from '../../Components/SectionAboutMe'
-import SkillsSection from '../../Components/SkillsSection'
+import SectionAboutMe from './PageComponents/SectionAboutMe'
+import SkillsSection from './PageComponents/SkillsSection'
 
 import { Wrapper } from './style'
 
