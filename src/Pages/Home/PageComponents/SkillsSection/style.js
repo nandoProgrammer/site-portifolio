@@ -26,7 +26,7 @@ export const ButtonItem = styled.button`
     width: 295px;
     height: 60px;
     margin: 0 40px;
-    background: linear-gradient(90deg, #0808ED 50%, #2667C9 83.37%);
+    background-image: linear-gradient(90deg, #0808ED 50%, #2667C9 83.37%);
     border-radius: 46px;
     font-weight: bold;
     font-size: 20px;
@@ -75,5 +75,36 @@ export const TitleTechnology = styled.span`
     font-size: 20px;
     line-height: 24px;  
     color: ${(props) => props.theme.colors.white};
+
+`;
+
+export const BarLinksTechnology = styled.div`
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+
+`;
+
+export const ButtonTechnology = styled.button`
+   
+    background: none;
+    padding: 10px 40px;
+    border: 2px solid ${(props) => props.theme.colors.white};
+    border-radius: 30px;
+    transition: 1s;
+    margin: 0 10px;
+    font-size: 20px;
+    color: ${(props) => props.theme.colors.white};
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover{
+        opacity: 0.5;
+        cursor: pointer;
+    }
 
 `;

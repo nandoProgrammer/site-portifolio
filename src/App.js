@@ -1,12 +1,12 @@
 import Theme from './Styles/Theme';
 import GlobalStyle from './Styles/global';
 
-import Home from './Pages/Home'
+import Routes from './routes'
 
 const App = () => {
   return (
     <Theme>
-      <Home />
+      <Routes />
       <GlobalStyle />
     </Theme>
   );

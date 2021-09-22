@@ -1,14 +1,24 @@
 import React, {useState} from 'react'
 
+import { Link } from 'react-router-dom';
 import TitleSection from '../../../../Components/TitleSection';
 
-import { WrapperSkillsButton, WrapperSkills, ButtonItem, BoxTechnology, CircleBoxTechnology, TitleTechnology } from './style'
+import { 
+    WrapperSkillsButton, 
+    WrapperSkills, 
+    ButtonItem, 
+    BoxTechnology, 
+    CircleBoxTechnology, 
+    TitleTechnology, 
+    BarLinksTechnology, 
+    ButtonTechnology 
+} from './style'
 
 let skills = [
     {
         id: 0,
         name:'Front-End',
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Bootstrap']
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Bootstrap'],
     },
     {
         id: 1,
@@ -30,6 +40,11 @@ const SkillsSection = () => {
     
     const SelectSkill = (id) => {
         setActualSkill(skills[id]);
+    }
+
+    const setTechnologyOnLocalStorage = (technology) => {
+         localStorage.setItem('technology', technology)
+         window.location.href="projetos";
     }
 
 
@@ -54,6 +69,11 @@ const SkillsSection = () => {
                            <BoxTechnology>
                                <CircleBoxTechnology />
                                <TitleTechnology>{item}</TitleTechnology>
+                               <BarLinksTechnology>
+                                   <ButtonTechnology onClick={() => setTechnologyOnLocalStorage(item)}>
+                                      Ver Projetos
+                                   </ButtonTechnology>
+                               </BarLinksTechnology>
                            </BoxTechnology>
                         </>
                     ))
