@@ -1,34 +1,17 @@
-let projects = [
-    {
-        frontend: [
-            {
-               name: 'Site Hotel SummerWind feito em Bootstrap',
-               description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
-               tecnologies: ['Bootstrap','HTML5','CSS3'],
-               repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
-               icon: ''
-            }
-        ],
-        backend: [
-            {
-
-            }
-        ],
-        mobile: [
-            {
-
-            }
-        ]
-    }
-];
+import React, { useState } from 'react';
+import Header from '../../Components/Header';
+import SectionProjects from './PageComponents/SectionProjects'
+import { Wrapper } from './../style';
 
 
 const Projetos = () => {
 
-   let technology = localStorage.getItem('technology');
 
     return(
-        <h1>ok</h1>
+        <Wrapper>
+           <Header logo={'Fernando Costa'} links={[{name:'1', logo:'Github'}, {name:'2', logo:'Linkedin'}]} />
+           <SectionProjects />
+        </Wrapper>
     )
     
 }

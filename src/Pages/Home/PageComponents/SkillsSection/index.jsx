@@ -43,7 +43,8 @@ const SkillsSection = () => {
     }
 
     const setTechnologyOnLocalStorage = (technology) => {
-         localStorage.setItem('technology', technology)
+         let data = JSON.stringify({ actualTechnology: technology, area: actualSkill.name });
+         localStorage.setItem('technologySelected', data);
          window.location.href="projetos";
     }
 
