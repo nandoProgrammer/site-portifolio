@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 let projects = [
     {
-        frontend: [
+        area: 'Front-End',
+        projects: [
             {
                name: 'Site Hotel SummerWind feito em Bootstrap',
                description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
                tecnologies: ['Bootstrap','HTML5','CSS3'],
                repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
                icon: ''
-            }, 
-        ],
-        backend: [
+            },
             {
-
-            }
-        ],
-        mobile: [
-            {
-
-            }
-        ]
+                name: 'Site Hotel SummerWind feito em HTML',
+                description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
+                tecnologies: ['Bootstrap','HTML5','CSS3'],
+                repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
+                icon: ''
+             }
+       ]
+    },
+    {
+        area: 'backend',
+        projects: [{name:'nada'}]
+    },
+    {
+        area: 'mobile',
+        projects: [{name: 'nada'}]
     }
 ];
 
@@ -30,16 +36,27 @@ let projects = [
 const SectionProjects = () => {
 
    let technologySelected = JSON.parse(localStorage.getItem('technologySelected'));
-   const [projetcsActual, setProjectsActual] = useState(technologySelected);
 
-   let nameArea = toString(projetcsActual.area);
-
-   //console.log(Object.keys(projects[0]));
-   console.log(projects[0].nameArea)
+   const areaActual = projects.filter(item => item.area === technologySelected.area);
+   console.log(areaActual);
+   const projectsSelected = areaActual[0].projects;
+  
+  
 
     return(
-      <h1>ok</h1>
+        <>
+          {  
+            projectsSelected.map((item) => (
+                <>
+                  <span>{item.name}</span>
+                </>
+            ))
+          } 
+        </>
     )
+        
+    
+            
     
 }
 
