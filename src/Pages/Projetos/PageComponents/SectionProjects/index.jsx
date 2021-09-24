@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 let projects = [
     {
         area: 'Front-End',
@@ -10,27 +7,20 @@ let projects = [
                description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
                tecnologies: ['Bootstrap','HTML5','CSS3'],
                repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
-               icon: ''
-            },
-            {
-                name: 'Site Hotel SummerWind feito em HTML',
-                description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
-                tecnologies: ['Bootstrap','HTML5','CSS3'],
-                repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
-                icon: ''
-             }
+               icon: '',
+               job: false
+            }
        ]
     },
     {
-        area: 'backend',
-        projects: [{name:'nada'}]
+        area: 'Back-End',
+         projects: []
     },
     {
-        area: 'mobile',
-        projects: [{name: 'nada'}]
+        area: 'Mobile',
+         projects: []
     }
 ];
-
 
 
 const SectionProjects = () => {
@@ -38,26 +28,23 @@ const SectionProjects = () => {
    let technologySelected = JSON.parse(localStorage.getItem('technologySelected'));
 
    const areaActual = projects.filter(item => item.area === technologySelected.area);
-   console.log(areaActual);
-   const projectsSelected = areaActual[0].projects;
-  
+   const projectsSelected = areaActual[0].projects;  
   
 
     return(
         <>
-          {  
-            projectsSelected.map((item) => (
+         {  
+            projectsSelected.length !== 0 ? projectsSelected.map((item) => (
                 <>
                   <span>{item.name}</span>
                 </>
-            ))
+            )):(
+                //Aqui vai uma imagem de 404
+                <h2>Nada Aqui</h2>
+            )
           } 
         </>
-    )
-        
-    
-            
-    
-}
+    )    
+};
 
 export default SectionProjects;
