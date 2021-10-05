@@ -1,4 +1,3 @@
-import Lottie from 'react-lottie';
 import NadaAqui from '../../../../Lotties/NadaAqui';
 
 import { BoxProject, BoxEmpty, TextEmpty } from './style';
