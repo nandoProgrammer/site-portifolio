@@ -13,37 +13,21 @@ import {
     ButtonTechnology 
 } from './style'
 
-let skills = [
-    {
-        id: 0,
-        name:'Front-End',
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Bootstrap'],
-    },
-    {
-        id: 1,
-        name:'Back-End',
-        technologies: ['PHP', 'Node Js']
-    },
-    {
-        id: 2,
-        name:'Mobile',
-        technologies: ['React Native']
-    }
-
-];
+import data from './../../../../data';
+ 
 
 
 const SkillsSection = () => {
 
-    const [actualSkill, setActualSkill] = useState(skills[0]);
+    const [actualSkill, setActualSkill] = useState(data[0]);
     
     const SelectSkill = (id) => {
-        setActualSkill(skills[id]);
+        setActualSkill(data[id]);
     }
 
     const setTechnologyOnLocalStorage = (technology) => {
-         let data = JSON.stringify({ actualTechnology: technology, area: actualSkill.name });
-         localStorage.setItem('technologySelected', data);
+         let dataSelected = JSON.stringify({ actualTechnology: technology, area: actualSkill.area });
+         localStorage.setItem('technologySelected', dataSelected);
          window.location.href="projetos";
     }
 
@@ -55,9 +39,9 @@ const SkillsSection = () => {
             </TitleSection>
             <WrapperSkillsButton>
                 {
-                    skills.map((skill) => (
+                    data.map((skill) => (
                         <>
-                            <ButtonItem onClick={() => SelectSkill(skill.id)}>{skill.name}</ButtonItem>
+                            <ButtonItem onClick={() => SelectSkill(skill.id)}>{skill.area}</ButtonItem>
                         </>
                     ))
                 }

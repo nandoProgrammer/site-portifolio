@@ -1,3 +1,8 @@
+import Lottie from 'react-lottie';
+import NadaAqui from '../../../../Lotties/NadaAqui';
+
+import { BoxProject, BoxEmpty, TextEmpty } from './style';
+
 let projects = [
     {
         area: 'Front-End',
@@ -36,11 +41,15 @@ const SectionProjects = () => {
          {  
             projectsSelected.length !== 0 ? projectsSelected.map((item) => (
                 <>
-                  <span>{item.name}</span>
+                  <BoxProject>
+                      jb
+                  </BoxProject>
                 </>
             )):(
-                //Aqui vai uma imagem de 404
-                <h2>Nada Aqui</h2>
+                <BoxEmpty>
+                  <NadaAqui />
+                  <TextEmpty>Nada Aqui!</TextEmpty>
+                </BoxEmpty>
             )
           } 
         </>
