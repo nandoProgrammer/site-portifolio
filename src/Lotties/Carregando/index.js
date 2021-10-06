@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Lottie from 'react-lottie';
-import animationData from './nada-aqui.json'
+import animationData from './carregando.json'
 
 const NadaAqui = () => {
     const [isStopped, setIsStopped] = useState(false);
@@ -10,7 +10,7 @@ const NadaAqui = () => {
     const buttonStyle = {
         display: 'none',
         margin: '10px auto'
-      };
+    };
 
     const defaultOptions = {
         loop: true,
@@ -28,9 +28,7 @@ const NadaAqui = () => {
               width={500}
               isStopped={isStopped}
               isPaused={isPaused}/>
-      <button style={buttonStyle} onClick={() => setIsStopped(true)}>stop</button>
-      <button style={buttonStyle} onClick={() => setIsStopped(false)}>play</button>
-      <button style={buttonStyle} onClick={() => setIsPaused(!isPaused)}>pause</button>
+     
     </div>
     )
 }

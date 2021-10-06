@@ -1,6 +1,6 @@
-import NadaAqui from '../../../../Lotties/NadaAqui';
+import NadaAqui from '../../../../Lotties/Carregando';
 
-import { BoxProject, BoxEmpty, TextEmpty } from './style';
+import { ContainerBoxProjects, BoxProject, BoxEmpty, BoxTextEmpty, TextEmpty } from './style';
 
 let projects = [
     {
@@ -36,22 +36,24 @@ const SectionProjects = () => {
   
 
     return(
-        <>
+        <ContainerBoxProjects >
          {  
             projectsSelected.length !== 0 ? projectsSelected.map((item) => (
                 <>
                   <BoxProject>
-                      jb
+                      
                   </BoxProject>
                 </>
             )):(
                 <BoxEmpty>
                   <NadaAqui />
-                  <TextEmpty>Nada Aqui!</TextEmpty>
+                  <BoxTextEmpty>
+                     <TextEmpty>Carregando...</TextEmpty>
+                  </BoxTextEmpty>
                 </BoxEmpty>
             )
           } 
-        </>
+        </ContainerBoxProjects >
     )    
 };
 

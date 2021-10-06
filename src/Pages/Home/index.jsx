@@ -4,6 +4,7 @@ import Header from '../../Components/Header'
 import SectionAboutMe from './PageComponents/SectionAboutMe'
 import SkillsSection from './PageComponents/SkillsSection'
 
+
 import { Wrapper } from './../style'
 
 

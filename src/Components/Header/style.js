@@ -25,16 +25,23 @@ export const Nav = styled.nav`
 
 `;
 
+export const LinkNav = styled.li`
+
+    display: block;
+
+`;
+
 export const ItemLink = styled.a`
 
     display: flex;
     width: 30px;
     height: 30px;
-    background-color: ${(props) => props.theme.colors.white};
     margin: 0 10px;
     border-radius: 50%;
     transition: 1s;
     align-items: center;
+    font-size: 30px;
+    color: ${(props) => props.theme.colors.white};
 
     &:hover{
          opacity: 0.5;

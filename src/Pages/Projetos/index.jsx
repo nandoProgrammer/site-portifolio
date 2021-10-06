@@ -9,7 +9,7 @@ const Projetos = () => {
 
     return(
         <Wrapper>
-           <Header logo={'Fernando Costa'} links={[{name:'1', logo:'Github'}, {name:'2', logo:'Linkedin'}]} />
+           <Header logo={'Fernando Costa'} />
            <SectionProjects />
         </Wrapper>
     )
