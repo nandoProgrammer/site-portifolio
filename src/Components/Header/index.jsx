@@ -2,14 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-import { HeaderStyle, Logo, Nav, LinkNav, ItemLink } from './style';
-import { Redirect } from 'react-router';
+import { HeaderStyle, Logo, Nav, LinkNav, ItemLink, ButtonMenuMobile } from './style';
+
 
 const Header = (props) => {
-
-    const redirect = (url) => {
-        window.location.href = url;
-    }
 
     return (
         <HeaderStyle>
@@ -18,16 +14,19 @@ const Header = (props) => {
           </Logo>
           <Nav>
             <LinkNav>
-                <ItemLink onClick={() => redirect('https://github.com/nandoProgrammer')}>
+                <ItemLink href="https://github.com/nandoProgrammer">
                     <i class="fab fa-github"></i>
                 </ItemLink>
             </LinkNav>
             <LinkNav>
-                <ItemLink onClick={() => redirect()}>
+                <ItemLink href="#">
                     <i class="fab fa-linkedin"></i>
                 </ItemLink>
             </LinkNav>
           </Nav>
+          <ButtonMenuMobile>
+             <i class="fas fa-ellipsis-v"></i>
+          </ButtonMenuMobile>
         </HeaderStyle>
     )
 }

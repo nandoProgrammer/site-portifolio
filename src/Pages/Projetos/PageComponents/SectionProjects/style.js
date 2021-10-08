@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ContainerBoxProjects = styled.div`
 
    width: 100%;
-   padding-top: 150px;
+   padding-top: 50px;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;

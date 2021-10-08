@@ -14,6 +14,10 @@ export const ContentSectionAboutMe = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media(max-width: 800px) {
+        flex-direction: column;
+    }
     
 `;
 
@@ -23,6 +27,10 @@ export const TextContent = styled.div`
     height: 100%;  
     padding: 0; 
     padding: 100px 100px 100px 0;
+
+    @media(max-width: 800px) {
+        padding: 0;
+    }
 
 `;
 
@@ -63,7 +71,15 @@ export const ButtonSkills = styled.button`
     &:hover{
         opacity: 0.5;
         cursor: pointer;
-   }
+    }
+
+    @media(max-width: 800px) {
+        width: 250px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+   
 
 `;
 
@@ -78,6 +94,10 @@ export const FrameBigger = styled.div`
     height: 630px;  
     background: linear-gradient(180deg, #0808ED 0%, rgba(8, 8, 237, 0) 100%);
     border-radius: 10px;
+
+    @media(max-width: 800px) {
+        display: none;
+    }
    
 `;
 
