@@ -57,7 +57,7 @@ export const ButtonSkills = styled.button`
     width: 400px;
     height: 63px;
     border: 0;
-    margin: 60px auto 0 auto;
+    margin: 60px  0;
 
     font-weight: bold;
     font-size: 20px;
@@ -77,6 +77,7 @@ export const ButtonSkills = styled.button`
         width: 250px;
         height: 50px;
         font-size: 15px;
+        margin: 60px auto 0 auto;
     }
 
    
