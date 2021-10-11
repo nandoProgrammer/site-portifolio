@@ -13,8 +13,8 @@ export const ContainerBoxProjects = styled.div`
 
 export const BoxProject = styled.div`
 
-   width: 300px;
-   height: 400px;
+   width: 295px;
+   height: 397px;
    margin-top: 20px;
    background-image: linear-gradient(90deg, #0808ED 50%, #2667C9 83.37%);
    border-radius: 10px;

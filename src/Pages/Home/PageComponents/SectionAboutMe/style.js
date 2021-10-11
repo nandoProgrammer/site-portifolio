@@ -53,11 +53,11 @@ export const TextAboutMeParagraph = styled.p`
 `;
 
 export const ButtonSkills = styled.button`
-
+    display: block;
     width: 400px;
     height: 63px;
     border: 0;
-    margin-top: 60px;
+    margin: 60px auto 0 auto;
 
     font-weight: bold;
     font-size: 20px;

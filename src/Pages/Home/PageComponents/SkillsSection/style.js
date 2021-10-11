@@ -8,6 +8,11 @@ export const WrapperSkillsButton = styled.nav`
     justify-content: space-between;
     margin-top: 50px;
 
+    @media(max-width: 800px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
 `;
 
 export const WrapperSkills = styled.nav`
@@ -16,7 +21,7 @@ export const WrapperSkills = styled.nav`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 50px;
 
 `;
 
@@ -39,6 +44,13 @@ export const ButtonItem = styled.button`
         opacity: 0.5;
         cursor: pointer;
 
+    }
+
+    @media(max-width: 800px) {
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+        margin: 0 5px;
     }
 
 `;
