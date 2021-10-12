@@ -2,7 +2,27 @@ const data = [
     {   
         id: 0,
         area: 'Front-End',
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Bootstrap'],
+        technologies: [
+            {
+                name: 'HTML5',
+                img_name: 'html-logo.png'
+            }, 
+            {
+                name: 'CSS3',
+                img_url: 'css3-logo.png'
+            }, 
+            {
+                name: 'JavaScript',
+                img_url: 'js-logo.png'
+            }, 
+            {
+                name: 'React.js',
+                img_url: 'reactjs-logo.png'
+            }, 
+            {
+                name: 'Bootstrap',
+                img_url: 'bootstrap-logo.png'
+            }],
         projects: [
             {
                 name: 'Site Hotel SummerWind feito em Bootstrap',
@@ -17,13 +37,28 @@ const data = [
     {   
         id: 1,
         area: 'Back-End',
-        technologies: ['PHP', 'Node Js', 'MySql', 'PostgreeSql'],
+        technologies: [
+            {
+               name: 'PHP'
+            }, 
+            {
+               name: 'Node Js'
+            }, 
+            { 
+               name: 'MySql'
+            }, 
+            {
+               name: 'PostgreeSql'
+            }],
         projects: []
     },
     {
         id: 2,
         area: 'Mobile',
-        technologies: ['React Native'],
+        technologies: [
+            {
+              name: 'React Native'
+            }],
         projects: []
     }
 ];

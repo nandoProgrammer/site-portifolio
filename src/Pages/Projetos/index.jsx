@@ -9,7 +9,7 @@ const Projetos = () => {
 
     return(
         <Wrapper>
-           <Header logo={'Fernando Costa'} />
+           <Header />
            <SectionProjects />
         </Wrapper>
     )

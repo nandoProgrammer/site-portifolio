@@ -1,8 +1,16 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
 
-
-import { HeaderStyle, Logo, Nav, LinkNav, ItemLink, ButtonMenuMobile } from './style';
+import { 
+    HeaderStyle, 
+    Logo, 
+    Nav, 
+    LinkNav, 
+    ItemLink, 
+    ButtonMenuMobile,
+    NavMobile,
+    LinkMobileItem, 
+    Link
+} from './style';
 
 
 const Header = (props) => {
@@ -16,8 +24,8 @@ const Header = (props) => {
     return (
         <>
         <HeaderStyle>
-          <Logo>
-             {props.logo}
+          <Logo href="/">
+             Fernando Costa
           </Logo>
           <Nav>
             <LinkNav>
@@ -35,18 +43,28 @@ const Header = (props) => {
              <i class="fas fa-bars"></i>
           </ButtonMenuMobile>
         </HeaderStyle>
-        <ul>
+        
             {
-                menuMobileStatus ? <h1>ok</h1> : ''
+                menuMobileStatus ? 
+                <NavMobile>
+                   <LinkMobileItem>
+                     <Link href="#">
+                        <i class="fab fa-github"></i>
+                     </Link>
+                   </LinkMobileItem>
+                   <LinkMobileItem>
+                      <Link>
+                         <i class="fab fa-linkedin"></i>
+                      </Link>
+                   </LinkMobileItem>
+                </NavMobile> 
+                : null
             }
-        </ul>
+     
         </>
     )
 }
 
-Header.propTypes = {
-    logo: PropTypes.string,
-};
 
 
 export default Header;

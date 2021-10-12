@@ -52,10 +52,13 @@ export const TextAboutMeParagraph = styled.p`
 
 `;
 
-export const ButtonSkills = styled.button`
+export const ButtonSkills = styled.a`
     display: block;
-    width: 400px;
-    height: 63px;
+    max-width: 400px;
+    
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
     border: 0;
     margin: 60px  0;
 

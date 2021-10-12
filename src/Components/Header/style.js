@@ -9,11 +9,12 @@ export const HeaderStyle = styled.header`
 
 `;
 
-export const Logo = styled.h1`
+export const Logo = styled.a`
 
-     font-size: 40px;
-     font-weight: bold;
-     color: ${(props) => props.theme.colors.white};
+    font-size: 40px;
+    font-weight: bold;
+    color: ${(props) => props.theme.colors.white};
+    text-decoration: none;
 
     @media(max-width: 800px) {
        font-size: 20px;
@@ -71,3 +72,31 @@ export const ButtonMenuMobile = styled.div`
     }
 
 `;
+
+export const NavMobile = styled.ul`
+   display: none;
+
+   @media(max-width: 800px) {
+      display:block;
+      color: ${(props) => props.theme.colors.white};
+   }
+`;
+
+export const LinkMobileItem = styled.li`
+   max-width: 200px;
+   display: block;
+   margin: 10px auto;
+`;
+
+export const Link = styled.a`
+   display: block;
+   width: 100%;
+   
+   background-color: ${(props) => props.theme.colors.white};
+   border-radius: 30px;
+   color: #000;
+   padding: 10px 20px;
+   text-align: center;
+
+`;
+

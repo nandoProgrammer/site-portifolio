@@ -55,6 +55,12 @@ export const ButtonItem = styled.button`
 
 `;
 
+export const ButtonActive = styled(ButtonItem)`
+
+    box-shadow: 10px 2px 0px white; 
+
+`;
+
 export const BoxTechnology = styled.div`
     
     display: flex;
@@ -120,3 +126,4 @@ export const ButtonTechnology = styled.button`
     }
 
 `;
+

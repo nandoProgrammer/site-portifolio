@@ -7,6 +7,7 @@ export default createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
   }
 
   html, body, #root {
@@ -14,5 +15,6 @@ export default createGlobalStyle`
   }
   body{
     background-color: ${(props) => props.theme.colors.background};
+    
   }
 `;

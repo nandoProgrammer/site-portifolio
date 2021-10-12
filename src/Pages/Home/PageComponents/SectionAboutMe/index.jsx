@@ -25,7 +25,7 @@ const SectionAboutMe = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id tristique leo. Duis pulvinar condimentum est, ac accumsan elit sollicitudin et. Vestibulum aliquet vestibulum felis varius ultrices. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id tristique leo. Duis pulvinar condimentum est, ac accumsan elit sollicitudin et. Vestibulum aliquet vestibulum felis varius ultrices.  
                     </TextAboutMeParagraph>
-                    <ButtonSkills>
+                    <ButtonSkills href="#habilidades">
                         Veja Minhas habilidades 
                     </ButtonSkills>
                 </TextContent>

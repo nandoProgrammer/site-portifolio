@@ -6,16 +6,16 @@ import {
     WrapperSkillsButton, 
     WrapperSkills, 
     ButtonItem, 
+    ButtonActive,
     BoxTechnology, 
     CircleBoxTechnology, 
     TitleTechnology, 
     BarLinksTechnology, 
-    ButtonTechnology 
+    ButtonTechnology,
 } from './style'
 
-import data from './../../../../data';
- 
 
+import data from './../../../../data';
 
 const SkillsSection = () => {
 
@@ -33,15 +33,21 @@ const SkillsSection = () => {
 
 
     return (
-        <>  
+        <a id="habilidades">  
             <TitleSection>
                 Minhas Habilidades
             </TitleSection>
             <WrapperSkillsButton>
                 {
                     data.map((skill) => (
-                        <>
-                            <ButtonItem onClick={() => SelectSkill(skill.id)}>{skill.area}</ButtonItem>
+                        <> 
+                        {
+                           skill.area === actualSkill.area ? 
+                              <ButtonActive onClick={() => SelectSkill(skill.id)}>{skill.area}</ButtonActive> 
+                              :
+                              <ButtonItem onClick={() => SelectSkill(skill.id)}>{skill.area}</ButtonItem>
+                        }
+                            
                         </>
                     ))
                 }
@@ -51,8 +57,10 @@ const SkillsSection = () => {
                     actualSkill['technologies'].map((item) => (
                         <>
                            <BoxTechnology>
-                               <CircleBoxTechnology />
-                               <TitleTechnology>{item}</TitleTechnology>
+                               <CircleBoxTechnology>
+                                   <img src={item.img_name} />
+                               </CircleBoxTechnology>
+                               <TitleTechnology>{item.name}</TitleTechnology>
                                <BarLinksTechnology>
                                    <ButtonTechnology onClick={() => setTechnologyOnLocalStorage(item)}>
                                       Ver Projetos
@@ -63,7 +71,7 @@ const SkillsSection = () => {
                     ))
                 }
         </WrapperSkills>
-    </>
+    </a>
     )
 }
 
