@@ -83,12 +83,15 @@ export const NavMobile = styled.ul`
 `;
 
 export const LinkMobileItem = styled.li`
+
    max-width: 200px;
    display: block;
    margin: 10px auto;
+   
 `;
 
 export const Link = styled.a`
+
    display: block;
    width: 100%;
    

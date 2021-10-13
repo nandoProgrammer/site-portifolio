@@ -5,7 +5,8 @@ import {
     BoxProject, 
     BoxEmpty, 
     BoxTextEmpty, 
-    TextEmpty 
+    TextEmpty,
+    ImageProject
 } from './style';
 
 import data from './../../../../data';
@@ -24,7 +25,9 @@ const SectionProjects = () => {
             projectsSelected.length !== 0 ? projectsSelected.map((item) => (
                 <>
                   <BoxProject>
-                      
+                      <ImageProject>
+                        
+                      </ImageProject>
                   </BoxProject>
                 </>
             )):(

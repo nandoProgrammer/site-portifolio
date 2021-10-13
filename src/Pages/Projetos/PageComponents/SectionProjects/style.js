@@ -21,6 +21,16 @@ export const BoxProject = styled.div`
 
 `;
 
+export const ImageProject = styled.div`
+
+   width: 200px;
+   height: 200px;
+   background-color: white;
+   border-radius: 50%;
+   margin: 30px auto 10px auto;
+
+`;
+
 export const BoxEmpty = styled.div`
    
    text-align: center;
@@ -28,8 +38,10 @@ export const BoxEmpty = styled.div`
 `;
 
 export const BoxTextEmpty = styled.div`
+
    padding: 20px;
    margin-top: 20px;
+   
 `;
 
 export const TextEmpty = styled.span`
