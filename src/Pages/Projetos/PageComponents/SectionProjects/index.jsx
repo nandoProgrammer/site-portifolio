@@ -6,7 +6,9 @@ import {
     BoxEmpty, 
     BoxTextEmpty, 
     TextEmpty,
-    ImageProject
+    ImageProject,
+    TitleProject,
+    ButtonLinkProject
 } from './style';
 
 import data from './../../../../data';
@@ -28,6 +30,12 @@ const SectionProjects = () => {
                       <ImageProject>
                         
                       </ImageProject>
+                      <TitleProject>
+                        {item.name}
+                      </TitleProject>
+                      <ButtonLinkProject>
+                        Ver Projeto
+                      </ButtonLinkProject>
                   </BoxProject>
                 </>
             )):(

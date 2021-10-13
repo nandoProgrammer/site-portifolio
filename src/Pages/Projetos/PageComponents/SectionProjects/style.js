@@ -18,6 +18,7 @@ export const BoxProject = styled.div`
    margin-top: 20px;
    background-image: linear-gradient(90deg, #0808ED 50%, #2667C9 83.37%);
    border-radius: 10px;
+   text-align: center;
 
 `;
 
@@ -51,3 +52,31 @@ export const TextEmpty = styled.span`
    color: ${(props) => props.theme.colors.white};
 
 `;
+
+export const TitleProject = styled.span`
+
+   font-size: 20px;
+   font-weight: 600;
+   color: ${(props) => props.theme.colors.white};
+
+`;
+
+export const ButtonLinkProject = styled.button`
+
+   background: linear-gradient(to left, rgba(0, 133, 255, 0.91) 1.11%, rgba(0, 0, 255, 0) 100%); 
+   padding: 10px 40px;
+   border: 2px solid ${(props) => props.theme.colors.white};
+   border-radius: 30px;
+   transition: 1s;
+   margin: 20px 10px;
+   font-size: 20px;
+   color: ${(props) => props.theme.colors.white};
+   font-weight: bold;
+   text-decoration: none;
+
+   &:hover{
+      opacity: 0.5;
+      cursor: pointer;
+   }
+
+` 
