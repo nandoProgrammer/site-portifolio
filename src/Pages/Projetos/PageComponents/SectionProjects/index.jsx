@@ -17,9 +17,12 @@ const SectionProjects = () => {
 
    let technologySelected = JSON.parse(localStorage.getItem('technologySelected'));
 
+   const selectProjects = data.forEach((item, index) => {
+       item.projects.forEach(technologies => console.log(technologies.technologies.find(item2 => item2 === technologySelected.actualTechnology)));
+   });
+
    const areaActual = data.filter(item => item.area === technologySelected.area);
    const projectsSelected = areaActual[0].projects;  
-  
 
     return(
         <ContainerBoxProjects >

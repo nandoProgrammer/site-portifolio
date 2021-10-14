@@ -28,6 +28,7 @@ const SkillsSection = () => {
     const setTechnologyOnLocalStorage = (technology) => {
          let dataSelected = JSON.stringify({ actualTechnology: technology, area: actualSkill.area });
          localStorage.setItem('technologySelected', dataSelected);
+         console.log(technology);
          window.location.href="projetos";
     }
 
@@ -62,7 +63,7 @@ const SkillsSection = () => {
                                </CircleBoxTechnology>
                                <TitleTechnology>{item.name}</TitleTechnology>
                                <BarLinksTechnology>
-                                   <ButtonTechnology onClick={() => setTechnologyOnLocalStorage(item)}>
+                                   <ButtonTechnology onClick={() => setTechnologyOnLocalStorage(item.name)}>
                                       Ver Projetos
                                    </ButtonTechnology>
                                </BarLinksTechnology>

@@ -27,10 +27,18 @@ const data = [
             {
                 name: 'Site Hotel SummerWind feito em Bootstrap',
                 description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
-                tecnologies: ['Bootstrap','HTML5','CSS3'],
+                technologies: ['Bootstrap','HTML5','CSS3'],
                 repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
                 icon: '',
                 job: false                
+            },
+            {
+                name: 'Dashboard usada em Jobs',
+                description: 'Base da dashboard usada em jobs para clientes reais',
+                technologies: ['HTML5','CSS3', 'Js', 'PHP', 'MySql'],
+                repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
+                icon: '',
+                job: true            
             }
         ]
     },
