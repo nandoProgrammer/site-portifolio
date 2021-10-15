@@ -7,12 +7,15 @@ import {
     WrapperSkills, 
     ButtonItem, 
     ButtonActive,
-    BoxTechnology, 
-    CircleBoxTechnology, 
-    TitleTechnology, 
-    BarLinksTechnology, 
-    ButtonTechnology,
 } from './style'
+
+import {
+    Box, 
+    CircleBox, 
+    TitleBox, 
+    BarLinksBox, 
+    ButtonBox,
+} from '../../../style';
 
 
 import data from './../../../../data';
@@ -57,17 +60,17 @@ const SkillsSection = () => {
                 {
                     actualSkill['technologies'].map((item) => (
                         <>
-                           <BoxTechnology>
-                               <CircleBoxTechnology>
-                                   <img src={item.img_name} />
-                               </CircleBoxTechnology>
-                               <TitleTechnology>{item.name}</TitleTechnology>
-                               <BarLinksTechnology>
-                                   <ButtonTechnology onClick={() => setTechnologyOnLocalStorage(item.name)}>
+                           <Box>
+                               <CircleBox>
+                                  
+                               </CircleBox>
+                               <TitleBox>{item.name}</TitleBox>
+                               <BarLinksBox>
+                                   <ButtonBox onClick={() => setTechnologyOnLocalStorage(item.name)}>
                                       Ver Projetos
-                                   </ButtonTechnology>
-                               </BarLinksTechnology>
-                           </BoxTechnology>
+                                   </ButtonBox>
+                               </BarLinksBox>
+                           </Box>
                         </>
                     ))
                 }

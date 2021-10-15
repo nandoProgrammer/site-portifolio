@@ -2,14 +2,18 @@ import NadaAqui from '../../../../Lotties/Carregando';
 
 import { 
     ContainerBoxProjects, 
-    BoxProject, 
     BoxEmpty, 
     BoxTextEmpty, 
-    TextEmpty,
-    ImageProject,
-    TitleProject,
-    ButtonLinkProject
+    TextEmpty
 } from './style';
+
+import {
+  Box, 
+  CircleBox, 
+  TitleBox, 
+  BarLinksBox, 
+  ButtonBox,
+} from '../../../style';
 
 import data from './../../../../data';
 
@@ -29,17 +33,17 @@ const SectionProjects = () => {
          {  
             projectsSelected.length !== 0 ? projectsSelected.map((item) => (
                 <>
-                  <BoxProject>
-                      <ImageProject>
-                        
-                      </ImageProject>
-                      <TitleProject>
-                        {item.name}
-                      </TitleProject>
-                      <ButtonLinkProject>
-                        Ver Projeto
-                      </ButtonLinkProject>
-                  </BoxProject>
+                  <Box>
+                      <CircleBox>
+                          
+                      </CircleBox>
+                      <TitleBox>{item.name}</TitleBox>
+                      <BarLinksBox>
+                          <ButtonBox href="">
+                             Ver Projetos
+                          </ButtonBox>
+                      </BarLinksBox>
+                  </Box>
                 </>
             )):(
                 <BoxEmpty>
