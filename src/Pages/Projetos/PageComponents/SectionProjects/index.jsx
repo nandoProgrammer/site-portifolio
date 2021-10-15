@@ -18,15 +18,21 @@ import {
 import data from './../../../../data';
 
 const SectionProjects = () => {
-
+  let projectsSelected = []; 
    let technologySelected = JSON.parse(localStorage.getItem('technologySelected'));
-
-   const selectProjects = data.forEach((item, index) => {
-       item.projects.forEach(technologies => console.log(technologies.technologies.find(item2 => item2 === technologySelected.actualTechnology)));
+   console.log(technologySelected);
+   const selectProjects = data.forEach((item) => {
+      item.projects.forEach(project => 
+        project.technologies.forEach((technology) => {
+          if(technology === technologySelected.actualTechnology){
+            projectsSelected.push(project);
+          }
+        })
+      );
    });
 
    const areaActual = data.filter(item => item.area === technologySelected.area);
-   const projectsSelected = areaActual[0].projects;  
+   
 
     return(
         <ContainerBoxProjects >
