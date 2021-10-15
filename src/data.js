@@ -5,23 +5,23 @@ const data = [
         technologies: [
             {
                 name: 'HTML5',
-                img_name: 'html-logo.png'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
             }, 
             {
                 name: 'CSS3',
-                img_url: 'css3-logo.png'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
             }, 
             {
                 name: 'JavaScript',
-                img_url: 'js-logo.png'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
             }, 
             {
                 name: 'React.js',
-                img_url: 'reactjs-logo.png'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
             }, 
             {
                 name: 'Bootstrap',
-                img_url: 'bootstrap-logo.png'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
             }],
         projects: [
             {
@@ -29,7 +29,7 @@ const data = [
                 description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
                 technologies: ['Bootstrap','HTML5','CSS3'],
                 repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
-                icon: '',
+                icon: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
                 job: false                
             },
             {
@@ -37,7 +37,7 @@ const data = [
                 description: 'Base da dashboard usada em jobs para clientes reais',
                 technologies: ['HTML5','CSS3', 'Js', 'PHP', 'MySql'],
                 repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
-                icon: '',
+                icon: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
                 job: true            
             }
         ]

@@ -27,8 +27,11 @@ export const CircleBox = styled.div`
 
     width: 180px;
     height: 180px;  
-    background: linear-gradient(180deg, rgba(0, 133, 255, 0.91) 1.11%, rgba(0, 0, 255, 0) 100%);
+    background: blue;
     border-radius: 50%;
+
+    background-image: url('${(props) => props.image}');
+    background-size: cover;
 
 `;
 

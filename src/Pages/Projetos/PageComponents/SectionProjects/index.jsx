@@ -19,9 +19,9 @@ import data from './../../../../data';
 
 const SectionProjects = () => {
   let projectsSelected = []; 
-   let technologySelected = JSON.parse(localStorage.getItem('technologySelected'));
-   console.log(technologySelected);
-   const selectProjects = data.forEach((item) => {
+  let technologySelected = JSON.parse(localStorage.getItem('technologySelected'));
+   
+   data.forEach((item) => {
       item.projects.forEach(project => 
         project.technologies.forEach((technology) => {
           if(technology === technologySelected.actualTechnology){
@@ -31,7 +31,7 @@ const SectionProjects = () => {
       );
    });
 
-   const areaActual = data.filter(item => item.area === technologySelected.area);
+  
    
 
     return(
@@ -40,13 +40,13 @@ const SectionProjects = () => {
             projectsSelected.length !== 0 ? projectsSelected.map((item) => (
                 <>
                   <Box>
-                      <CircleBox>
+                      <CircleBox image={item.icon}>
                           
                       </CircleBox>
                       <TitleBox>{item.name}</TitleBox>
                       <BarLinksBox>
                           <ButtonBox href="">
-                             Ver Projetos
+                             Ver Projeto
                           </ButtonBox>
                       </BarLinksBox>
                   </Box>

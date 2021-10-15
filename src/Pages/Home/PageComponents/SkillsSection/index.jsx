@@ -61,7 +61,7 @@ const SkillsSection = () => {
                     actualSkill['technologies'].map((item) => (
                         <>
                            <Box>
-                               <CircleBox>
+                               <CircleBox image={item.img_url}>
                                   
                                </CircleBox>
                                <TitleBox>{item.name}</TitleBox>
