@@ -26,7 +26,7 @@ export const CircleBox = styled.div`
 
     width: 180px;
     height: 180px;  
-    background: blue;
+    
     border-radius: 50%;
     background-size: cover;
 

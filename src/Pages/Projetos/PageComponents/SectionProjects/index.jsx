@@ -55,7 +55,7 @@ const SectionProjects = () => {
                 <BoxEmpty>
                   <NadaAqui />
                   <BoxTextEmpty>
-                     <TextEmpty>Aguarde por os próximos projetos...</TextEmpty>
+                     <TextEmpty>Aguarde os próximos projetos...</TextEmpty>
                   </BoxTextEmpty>
                 </BoxEmpty>
             )

@@ -30,12 +30,12 @@ const Header = () => {
           </Logo>
           <Nav>
             <LinkNav>
-                <ItemLink href="https://github.com/nandoProgrammer">
+                <ItemLink target="_blank" href="https://github.com/nandoProgrammer">
                     <i class="fab fa-github"></i>
                 </ItemLink>
             </LinkNav>
             <LinkNav>
-                <ItemLink href="#">
+                <ItemLink target="_blank" href="https://www.linkedin.com/in/fernando-pereira-costa/">
                     <i class="fab fa-linkedin"></i>
                 </ItemLink>
             </LinkNav>
