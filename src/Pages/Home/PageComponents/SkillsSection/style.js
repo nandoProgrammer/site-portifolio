@@ -8,7 +8,7 @@ export const WrapperSkillsButton = styled.nav`
     justify-content: space-between;
     margin-top: 50px;
 
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         flex-direction: row;
         flex-wrap: nowrap;
     }
@@ -46,7 +46,7 @@ export const ButtonItem = styled.button`
 
     }
 
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         width: 90px;
         height: 30px;
         font-size: 10px;

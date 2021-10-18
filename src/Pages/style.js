@@ -20,7 +20,6 @@ export const Box = styled.div`
     justify-content: center;
     align-items: center;
 
-
 `;
 
 export const CircleBox = styled.div`
@@ -29,12 +28,17 @@ export const CircleBox = styled.div`
     height: 180px;  
     background: blue;
     border-radius: 50%;
-
-    background-image: url('${(props) => props.image}');
     background-size: cover;
 
 `;
 
+export const ImgItem = styled.img`
+
+    width: ${(props) => props.width};
+    height: ${(props) => props.height};
+    border-radius: 50%;
+
+`;
 
 export const TitleBox = styled.span`
 

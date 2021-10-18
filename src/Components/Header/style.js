@@ -16,8 +16,28 @@ export const Logo = styled.a`
     color: ${(props) => props.theme.colors.white};
     text-decoration: none;
 
-    @media(max-width: 800px) {
-       font-size: 20px;
+    h1{
+        font-size: 35px;
+    }
+
+    span{
+        color: #0808ED;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+
+
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
+        h1{
+            font-size: 20px;
+        }
+    
+        h2{
+            font-size: 15px;
+        }
     }
 
 `;
@@ -27,7 +47,7 @@ export const Nav = styled.nav`
 
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
 
 `;
 
@@ -35,7 +55,7 @@ export const LinkNav = styled.li`
 
     display: block;
 
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         display: none;
     }
 
@@ -66,7 +86,7 @@ export const ButtonMenuMobile = styled.div`
 
     display: none;
 
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         display:block;
         color: ${(props) => props.theme.colors.white};
     }
@@ -76,7 +96,7 @@ export const ButtonMenuMobile = styled.div`
 export const NavMobile = styled.ul`
    display: none;
 
-   @media(max-width: 800px) {
+   @media(max-width: ${(props) => props.theme.breakpoints.md}) {
       display:block;
       color: ${(props) => props.theme.colors.white};
    }

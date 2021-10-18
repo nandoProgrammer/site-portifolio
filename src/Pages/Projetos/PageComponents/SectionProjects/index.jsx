@@ -1,15 +1,16 @@
 import NadaAqui from '../../../../Lotties/Carregando';
 
 import { 
-    ContainerBoxProjects, 
-    BoxEmpty, 
-    BoxTextEmpty, 
-    TextEmpty
+  ContainerBoxProjects, 
+  BoxEmpty, 
+  BoxTextEmpty, 
+  TextEmpty
 } from './style';
 
 import {
   Box, 
   CircleBox, 
+  ImgItem,
   TitleBox, 
   BarLinksBox, 
   ButtonBox,
@@ -31,17 +32,16 @@ const SectionProjects = () => {
       );
    });
 
-  
-   
-
     return(
         <ContainerBoxProjects >
          {  
             projectsSelected.length !== 0 ? projectsSelected.map((item) => (
                 <>
                   <Box>
-                      <CircleBox image={item.icon}>
-                          
+                      <CircleBox>
+                        {
+                           item.icon !== null ? <ImgItem src={item.icon} width={180} height={180} /> : <span>ok</span>
+                        }
                       </CircleBox>
                       <TitleBox>{item.name}</TitleBox>
                       <BarLinksBox>
@@ -55,7 +55,7 @@ const SectionProjects = () => {
                 <BoxEmpty>
                   <NadaAqui />
                   <BoxTextEmpty>
-                     <TextEmpty>Carregando...</TextEmpty>
+                     <TextEmpty>Aguarde por os próximos projetos...</TextEmpty>
                   </BoxTextEmpty>
                 </BoxEmpty>
             )

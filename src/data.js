@@ -5,23 +5,33 @@ const data = [
         technologies: [
             {
                 name: 'HTML5',
-                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
+                img_width: 180,
+                img_height: 180,
             }, 
             {
                 name: 'CSS3',
-                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
+                img_width: 180,
+                img_height: 180,
             }, 
             {
                 name: 'JavaScript',
-                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
+                img_width: 180,
+                img_height: 180,
             }, 
             {
                 name: 'React.js',
-                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
+                img_width: 180,
+                img_height: 180,
             }, 
             {
                 name: 'Bootstrap',
-                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg'
+                img_url: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
+                img_width: 180,
+                img_height: 180,
             }],
         projects: [
             {
@@ -47,16 +57,20 @@ const data = [
         area: 'Back-End',
         technologies: [
             {
-               name: 'PHP'
+               name: 'PHP',
+               img_url: null
             }, 
             {
-               name: 'Node Js'
+               name: 'Node Js',
+               img_url: null
             }, 
             { 
-               name: 'MySql'
+               name: 'MySql',
+               img_url: null
             }, 
             {
-               name: 'PostgreeSql'
+               name: 'PostgreeSql',
+               img_url: null
             }],
         projects: []
     },
@@ -65,7 +79,8 @@ const data = [
         area: 'Mobile',
         technologies: [
             {
-              name: 'React Native'
+              name: 'React Native',
+              img_url: null
             }],
         projects: []
     }

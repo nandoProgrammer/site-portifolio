@@ -12,6 +12,7 @@ import {
 import {
     Box, 
     CircleBox, 
+    ImgItem,
     TitleBox, 
     BarLinksBox, 
     ButtonBox,
@@ -61,8 +62,10 @@ const SkillsSection = () => {
                     actualSkill['technologies'].map((item) => (
                         <>
                            <Box>
-                               <CircleBox image={item.img_url}>
-                                  
+                               <CircleBox>
+                                   {
+                                       item.img_url ? <ImgItem src={item.img_url} width={item.img_width} height={item.img_height} /> : null
+                                   }
                                </CircleBox>
                                <TitleBox>{item.name}</TitleBox>
                                <BarLinksBox>

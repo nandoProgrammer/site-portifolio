@@ -7,7 +7,7 @@ export const Title = styled.h2`
     line-height: 49px;
     color: ${(props) => props.theme.colors.white};
     
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         font-size: 20px;
     }
 `;

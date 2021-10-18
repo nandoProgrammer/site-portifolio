@@ -13,7 +13,7 @@ import {
 } from './style';
 
 
-const Header = (props) => {
+const Header = () => {
 
     const [menuMobileStatus, setMenuMobileStatus] = useState(false);
 
@@ -25,7 +25,8 @@ const Header = (props) => {
         <>
         <HeaderStyle>
           <Logo href="/">
-             Fernando Costa
+             <h1>Fernando <span>Costa</span></h1>
+             <h2>Desenvolvedor fullstack</h2>
           </Logo>
           <Nav>
             <LinkNav>

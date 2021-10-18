@@ -15,7 +15,7 @@ export const ContentSectionAboutMe = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         flex-direction: column;
     }
     
@@ -76,7 +76,7 @@ export const ButtonSkills = styled.a`
         cursor: pointer;
     }
 
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         width: 250px;
         height: 50px;
         font-size: 15px;
@@ -99,7 +99,7 @@ export const FrameBigger = styled.div`
     background: linear-gradient(180deg, #0808ED 0%, rgba(8, 8, 237, 0) 100%);
     border-radius: 10px;
 
-    @media(max-width: 800px) {
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
         display: none;
     }
    
