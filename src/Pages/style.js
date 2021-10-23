@@ -32,12 +32,15 @@ export const CircleBox = styled.div`
 
 `;
 
-export const ImgItem = styled.img`
-
-    width: ${(props) => props.width};
-    height: ${(props) => props.height};
+export const ImgItem = styled.div`
     
-
+    width: 180px;
+    height: 180px;
+    background-image: url(${(props) => props.image});
+    border-radius: 50%;
+    background-size: ${(props) => props.size }px;
+    background-repeat: no-repeat;
+    background-position: center;
 `;
 
 export const TitleBox = styled.span`

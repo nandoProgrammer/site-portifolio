@@ -6,32 +6,27 @@ const data = [
             {
                 name: 'HTML5',
                 img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/html5-logo.png',
-                img_width: 180,
-                img_height: 180,
+                img_size: 106,
             }, 
             {
                 name: 'CSS3',
                 img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/css3-logo.png',
-                img_width: 180,
-                img_height: 180,
+                img_size: 106,
             }, 
             {
                 name: 'JavaScript',
                 img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/js5-logo.png',
-                img_width: 180,
-                img_height: 180,
+                img_size: 106,
             }, 
             {
                 name: 'React.js',
                 img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/react-logo.png',
-                img_width: 180,
-                img_height: 180,
+                img_size: 106,
             }, 
             {
                 name: 'Bootstrap',
                 img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/bootstrap-logo.svg',
-                img_width: 180,
-                img_height: 180,
+                img_size: 106,
             }],
         projects: [
             {
@@ -59,14 +54,12 @@ const data = [
             {
                name: 'PHP',
                img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/php-logo.svg',
-               img_width: 180,
-               img_height: 180,
+               img_size: 106,
             }, 
             {
                name: 'Node Js',
                img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/node-js-logo.png',
-               img_width: 180,
-               img_height: 180,
+               img_size: 106,
             }, 
             { 
                name: 'MySql',
@@ -77,8 +70,7 @@ const data = [
             {
                name: 'PostgreeSql',
                img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/postgre-sql-logo.png',
-               img_width: 180,
-               img_height: 180,
+               img_size: 106,
             }],
         projects: []
     },
@@ -89,8 +81,7 @@ const data = [
             {
               name: 'React Native',
               img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/react-native-logo.png',
-              img_width: 180,
-              img_height: 180,
+              img_size: 106,
             }],
         projects: []
     }

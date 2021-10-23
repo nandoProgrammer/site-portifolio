@@ -40,7 +40,7 @@ const SectionProjects = () => {
                   <Box>
                       <CircleBox>
                         {
-                           item.icon !== null ? <ImgItem src={item.icon} width={180} height={180} /> : <span>ok</span>
+                           item.icon !== null ? <ImgItem image={item.icon} /> : <span>ok</span>
                         }
                       </CircleBox>
                       <TitleBox>{item.name}</TitleBox>

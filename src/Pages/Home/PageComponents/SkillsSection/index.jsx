@@ -64,7 +64,7 @@ const SkillsSection = () => {
                            <Box>
                                <CircleBox>
                                    {
-                                       item.img_url ? <ImgItem src={item.img_url} width={item.img_width} height={item.img_height} /> : null
+                                       item.img_url ? <ImgItem image={item.img_url} size={item.img_size} /> : null
                                    }
                                </CircleBox>
                                <TitleBox>{item.name}</TitleBox>
