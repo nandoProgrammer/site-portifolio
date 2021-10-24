@@ -77,8 +77,8 @@ export const ButtonSkills = styled.a`
     }
 
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
-        width: 250px;
-        height: 50px;
+        width: 90%;
+        height: auto;
         font-size: 15px;
         margin: 60px auto 0 auto;
     }
