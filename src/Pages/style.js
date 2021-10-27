@@ -66,7 +66,7 @@ export const BarLinksBox = styled.div`
 
 `;
 
-export const ButtonBox = styled.button`
+export const ButtonBox = styled.a`
    
     background: none;
     padding: 10px 40px;

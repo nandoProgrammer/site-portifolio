@@ -34,17 +34,33 @@ const data = [
                 description: 'Site baseado em reservas de hotel online feito no curso de Bootstrap da DevSamurai',
                 technologies: ['Bootstrap', 'HTML5', 'CSS3'],
                 repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
-                icon: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
-                job: false                
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160               
             },
             {
                 name: 'Dashboard usada em Jobs',
                 description: 'Base da dashboard usada em jobs para clientes reais',
                 technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySql'],
                 repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
-                icon: 'https://img.freepik.com/fotos-gratis/imagem-aproximada-em-tons-de-cinza-de-uma-aguia-careca-americana-em-um-fundo-escuro_181624-31795.jpg?size=626&ext=jpg',
-                job: true            
-            }
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160          
+            },
+            {
+                name: 'DoodleFlix',
+                description: 'um site inspirado na netflix porém com os doodles do google',
+                technologies: ['HTML5', 'CSS3', 'JavaScript'],
+                repositoryURL: 'https://github.com/nandoProgrammer/doodleFlix',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160          
+            },
+            {
+                name: 'Buscaki',
+                description: 'Site que consome a Api do Google e mostra os comércios locais',
+                technologies: ['React.js', 'JavaScript'],
+                repositoryURL: 'https://github.com/nandoProgrammer/buscaki',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160         
+            },
         ]
     },
     {   
@@ -71,7 +87,48 @@ const data = [
                img_url: 'https://agenciaalgoritimo.com/imagens-tecnologias/postgre-sql-logo.png',
                img_size: 249,
             }],
-        projects: []
+        projects: [
+            {
+                name: 'Conexão MySql com PDO',
+                description: 'Modelo de conexão segura a um banco de dados MySql usando PDO',
+                technologies: ['PHP', 'MySql'],
+                repositoryURL: 'https://github.com/nandoProgrammer/buscaki',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160         
+            },
+            {
+                name: 'Consumo de Api Rest API do Futebol',
+                description: 'Concumo de Api Rest API do futebol, onde é necessário enviar um token para autenticação',
+                technologies: ['PHP'],
+                repositoryURL: 'https://github.com/nandoProgrammer/consumoapidofutebol',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160       
+            },
+            {
+                name: 'API simples CRUD em Node.js',
+                description: 'CRUD API simples feito em Node.js',
+                technologies: ['Node Js'],
+                repositoryURL: 'https://github.com/nandoProgrammer/api-simples-em-node-js',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160       
+            },
+            {
+                name: 'API PWA notícias',
+                description: 'API criada para fornecer conteúdo para o projeto PWA notícias',
+                technologies: ['Node Js'],
+                repositoryURL: 'https://github.com/nandoProgrammer/api-pwa-noticias',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160       
+            },
+            {
+                name: 'Encriptador cifra de César',
+                description: 'Encriptador na cifra de César feito em PHP',
+                technologies: ['PHP'],
+                repositoryURL: 'https://github.com/nandoProgrammer/encriptador-cifra-de-cesar',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160       
+            }
+        ]
     },
     {
         id: 2,

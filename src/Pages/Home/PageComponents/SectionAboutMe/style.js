@@ -124,7 +124,8 @@ export const CircleSmall = styled.div`
     align-items: center;
     width: 250px;
     height: 250px;
-    background: #C4C4C4;
+    background-image: url(https://avatars.githubusercontent.com/u/62177135?v=4);
+    background-size: cover;
     border-radius: 50%;
 
 `;

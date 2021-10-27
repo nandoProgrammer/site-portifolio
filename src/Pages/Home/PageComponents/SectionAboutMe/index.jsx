@@ -19,11 +19,11 @@ const SectionAboutMe = () => {
             <ContentSectionAboutMe>
                 <TextContent>
                     <TextAboutMeTitle>
-                        Lorem ipsum door sit amet
+                        Me chamo Fernando Costa e sou desenvolvedor há mais de 2 anos
                     </TextAboutMeTitle>
                     <TextAboutMeParagraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id tristique leo. Duis pulvinar condimentum est, ac accumsan elit sollicitudin et. Vestibulum aliquet vestibulum felis varius ultrices. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id tristique leo. Duis pulvinar condimentum est, ac accumsan elit sollicitudin et. Vestibulum aliquet vestibulum felis varius ultrices.  
+                        Há mais de 2 anos desenvolvo sites para clientes captados na internet e também para projetos próprios.
+                        Gosto de aprender e sempre estar sendo desafiado e por isso estou em busca de novas oportunidades!
                     </TextAboutMeParagraph>
                     <ButtonSkills href="#habilidades">
                         Veja Minhas habilidades 
