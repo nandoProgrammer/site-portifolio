@@ -61,6 +61,30 @@ const data = [
                 icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
                 img_size: 160         
             },
+            {
+                name: 'Consome API com Axios',
+                description: 'Site que consome a Api que precisa de autenticação usando a biblioteca Axios',
+                technologies: ['React.js', 'JavaScript'],
+                repositoryURL: 'https://github.com/nandoProgrammer/consome-api-axios',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160         
+            },
+            {
+                name: 'PWA notícias',
+                description: 'App PWA que exibe notícias',
+                technologies: ['React.js', 'JavaScript'],
+                repositoryURL: 'https://github.com/nandoProgrammer/pwa-noticias',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160         
+            },
+            {
+                name: 'Testes em React.js usando a biblioteca react-testing-library',
+                description: 'Site destinado a testes de componentes usando a biblioteca react-testing-library',
+                technologies: ['React.js', 'JavaScript'],
+                repositoryURL: 'https://github.com/nandoProgrammer/testes-react-testing-library',
+                icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
+                img_size: 160         
+            },
         ]
     },
     {   
