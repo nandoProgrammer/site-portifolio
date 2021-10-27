@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../../Components/Header';
 import SectionProjects from './PageComponents/SectionProjects'
 import { Wrapper } from './../style';

@@ -38,7 +38,7 @@ const SkillsSection = () => {
 
 
     return (
-        <a id="habilidades">  
+        <>  
             <TitleSection>
                 Minhas Habilidades
             </TitleSection>
@@ -78,7 +78,7 @@ const SkillsSection = () => {
                     ))
                 }
         </WrapperSkills>
-    </a>
+    </>
     )
 }
 
