@@ -6,8 +6,6 @@ export const Section = styled.section`
     height: 100%;
     margin: 100px 0;
 
-    
-
 `;
 
 export const ContentSectionAboutMe = styled.div`
@@ -102,7 +100,7 @@ export const FrameBigger = styled.div`
     border-radius: 10px;
 
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
-        width: 400px;
+        width: 350px;
         height: 430px; 
         margin: 0 auto 50px auto;
     }
@@ -119,6 +117,12 @@ export const CircleBigger = styled.div`
     background: linear-gradient(180deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
     border-radius: 50%;
 
+    @media(max-width: ${(props) => props.theme.breakpoints.md}) {
+        width: 300px;
+        height: 300px; 
+        margin: 0 auto 50px auto;
+    }
+
 `;
 
 export const CircleSmall = styled.div`
@@ -126,8 +130,8 @@ export const CircleSmall = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     background-image: url(https://avatars.githubusercontent.com/u/62177135?v=4);
     background-size: cover;
     border-radius: 50%;
