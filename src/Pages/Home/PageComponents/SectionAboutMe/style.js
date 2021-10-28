@@ -6,6 +6,8 @@ export const Section = styled.section`
     height: 100%;
     margin: 100px 0;
 
+    
+
 `;
 
 export const ContentSectionAboutMe = styled.div`
@@ -16,7 +18,7 @@ export const ContentSectionAboutMe = styled.div`
     justify-content: space-between;
 
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     
 `;
@@ -100,7 +102,9 @@ export const FrameBigger = styled.div`
     border-radius: 10px;
 
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
-        display: none;
+        width: 468px;
+        height: 430px; 
+        margin: 0 auto 50px auto;
     }
    
 `;
