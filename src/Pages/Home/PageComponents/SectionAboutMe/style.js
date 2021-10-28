@@ -102,7 +102,7 @@ export const FrameBigger = styled.div`
     border-radius: 10px;
 
     @media(max-width: ${(props) => props.theme.breakpoints.md}) {
-        width: 468px;
+        width: 400px;
         height: 430px; 
         margin: 0 auto 50px auto;
     }
