@@ -41,7 +41,7 @@ const data = [
                 name: 'Dashboard usada em Jobs',
                 description: 'Base da dashboard usada em jobs para clientes reais',
                 technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySql'],
-                repositoryURL: 'https://github.com/nandoProgrammer/site_bootstrap',
+                repositoryURL: 'https://github.com/nandoProgrammer/dasboard-para-projetos',
                 icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
                 img_size: 160          
             },
@@ -116,7 +116,7 @@ const data = [
                 name: 'Conexão MySql com PDO',
                 description: 'Modelo de conexão segura a um banco de dados MySql usando PDO',
                 technologies: ['PHP', 'MySql'],
-                repositoryURL: 'https://github.com/nandoProgrammer/buscaki',
+                repositoryURL: 'https://github.com/nandoProgrammer/conexaomysql',
                 icon: 'https://agenciaalgoritimo.com/imagens-tecnologias/unknown-image.png',
                 img_size: 160         
             },
