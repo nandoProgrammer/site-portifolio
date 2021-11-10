@@ -49,12 +49,12 @@ const Header = () => {
                 menuMobileStatus ? 
                 <NavMobile>
                    <LinkMobileItem>
-                     <Link href="#">
+                     <Link href="https://github.com/nandoProgrammer" target="_blank">
                         <i class="fab fa-github"></i>
                      </Link>
                    </LinkMobileItem>
                    <LinkMobileItem>
-                      <Link>
+                      <Link href="https://www.linkedin.com/in/fernando-pereira-costa/" target="_blank">
                          <i class="fab fa-linkedin"></i>
                       </Link>
                    </LinkMobileItem>
