@@ -7,10 +7,10 @@ function App() {
         <h1>Novo Site Em Construção...</h1>
         <ul>
            <li>
-              <a href="https://github.com/nandoProgrammer/" target="_blank">Meu Github</a>
+              <a href="https://github.com/nandoProgrammer/" rel="noreferrer">Meu Github</a>
            </li>
            <li>
-              <a href="https://www.linkedin.com/in/fernando-pereira-costa/" target="_blank">Meu Linkedin</a>
+              <a href="https://www.linkedin.com/in/fernando-pereira-costa/" rel="noreferrer">Meu Linkedin</a>
            </li>
         </ul>
      </div>
