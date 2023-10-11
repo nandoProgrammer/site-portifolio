@@ -1,22 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle` 
-  :root {
-    --bg-primary: rgb(14, 14, 14);
-  }
-
   * {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: ${(props) => props.theme.font.family};
   }
   
   body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--bg-primary);
+    background-color:  ${(props) => props.theme.background.primary};
     overflow-x: hidden;
   }
 `;
