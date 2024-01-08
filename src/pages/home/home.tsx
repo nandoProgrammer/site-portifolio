@@ -1,23 +1,21 @@
 import React from 'react';
-import '../home/home.css';
 
-function Home() {
-  const redirect = (url: string) => {
-     window.open(url, "_blank", "noreferrer");
-  }
+import { WrapperHome } from './Home.style';
+import { Skills } from '../../components/Skills/Skills';
+import { Projects } from '../../components/Projects/Projects';
+import { AboutMe } from '../../components/AboutMe/AboutMe';
 
+import { Wrapper, Separator } from '../../styles/bootstrap';
+
+export const Home: React.FunctionComponent = () => {
   return (
-     <div className="content">
-        <h1>Novo Site Em Construção...</h1>
-        <ul>
-           <li>
-              <button onClick={() => redirect("https://github.com/nandoProgrammer/")}>Meu Github</button>
-           </li>
-           <li>
-              <button onClick={() => redirect("https://www.linkedin.com/in/fernando-pereira-costa/")}>Meu Linkedin</button>
-           </li>
-        </ul>
-     </div>
+    <WrapperHome>
+      <AboutMe/>
+      <Wrapper>
+        <Separator />
+      </Wrapper>
+      <Skills />
+    </WrapperHome>
   );
 }
 
