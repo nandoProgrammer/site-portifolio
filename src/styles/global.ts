@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color:  ${(props) => props.theme.background.primary};
+    background-color:  ${(props) => props.theme.colors.primary};
     overflow-x: hidden;
   }
 `;
