@@ -30,14 +30,14 @@ export const Skills: React.FunctionComponent = () => {
           <CardSkill title={"CSS"} xp={4} />
           <CardSkill title={"SCSS"} xp={4} />
           <CardSkill title={"JavaScript"} xp={4} />
-          <CardSkill title={"PHP"} xp={2} />
-          <CardSkill title={"React"} xp={2} />
-          <CardSkill title={"Angular"} xp={3} />
+          <CardSkill title={"PHP"} xp={3} />
+          <CardSkill title={"React"} xp={3} />
+          <CardSkill title={"Angular"} xp={4} />
           <CardSkill title={"Node.js"} xp={2} />
-          <CardSkill title={"Nest.js"} xp={1} />
+          <CardSkill title={"Nest.js"} xp={2} />
           <CardSkill title={"AWS"} xp={1} />
-          <CardSkill title={"Java"} xp={1} />
-          <CardSkill title={"MySql"} xp={1} />
+          <CardSkill title={"Java"} xp={3} />
+          <CardSkill title={"MySql"} xp={3} />
         </Wrapper>
       </SectionXp>
    );

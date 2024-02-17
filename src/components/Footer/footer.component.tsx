@@ -7,24 +7,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 const circlesLeft = require('../../assets/circles-left.png');
 
+const redirectTo = (url: string) => setTimeout(() => {
+   window.open(url, '_blank');
+}, 1000);
+
 export const FooterComponent: React.FunctionComponent = () => {
     return (
         <Footer background={circlesLeft}>
            <Wrapper direction={'row'} justify={'space-between'}>
               <div>
                  <HeadingLg>Contato</HeadingLg>
-                 <Paragraph>I would love to hear about your project and how I could help. <br/> Please fill in the form, and I’ll get back to you as soon as possible.</Paragraph>
+                 <Paragraph>Eu adoraria ouvir sobre seu projeto e como posso ajudar.</Paragraph>
               </div>
               <div>
                   <Nav>
                     <ul>
-                        <li> 
+                        <li onClick={() => redirectTo('https://www.linkedin.com/in/fernando-pereira-costa')}> 
                           <FontAwesomeIcon icon={faLinkedinIn} />
                         </li>
-                        <li>
+                        <li onClick={() => redirectTo('https://github.com/nandoProgrammer')}>
                            <FontAwesomeIcon icon={faGithub} />
                         </li>
-                        <li>
+                        <li onClick={() => redirectTo('https://wa.me/5587999289850')}>
                            <FontAwesomeIcon icon={faWhatsapp} />
                         </li>
                     </ul>

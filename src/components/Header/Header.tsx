@@ -6,6 +6,10 @@ import { Wrapper, HeadingMd } from '../../styles/bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
+const redirectTo = (url: string) => setTimeout(() => {
+    window.open(url, '_blank');
+}, 1000);
+
 export const Header: React.FunctionComponent = () => {
     return (
         <HeaderTop>
@@ -13,13 +17,13 @@ export const Header: React.FunctionComponent = () => {
                 <HeadingMd>fernando.costa</HeadingMd>
                 <Nav>
                     <ul>
-                        <li> 
+                        <li onClick={() => redirectTo('https://www.linkedin.com/in/fernando-pereira-costa')}> 
                           <FontAwesomeIcon icon={faLinkedinIn} />
                         </li>
-                        <li>
+                        <li onClick={() => redirectTo('https://github.com/nandoProgrammer')}>
                            <FontAwesomeIcon icon={faGithub} />
                         </li>
-                        <li>
+                        <li onClick={() => redirectTo('https://wa.me/5587999289850')}>
                            <FontAwesomeIcon icon={faWhatsapp} />
                         </li>
                     </ul>
