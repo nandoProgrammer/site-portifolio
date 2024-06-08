@@ -4,14 +4,18 @@ import { Emphasis, Photo, SectionAboutMe } from './AboutMe.style';
 const circlesLeft = require('../../assets/circles-left.png');
 const photoAboutMe = require('../../assets/photo-about-me.png');
 
-const calculateAge = (dateBirth: string) => {
-    const today: Date = new Date();
-    const birth = new Date(dateBirth);
-    let age: number = today.getFullYear() - birth.getFullYear();
-    const month = today.getMonth() - birth.getMonth();
-    if (month < 0 || (month === 0 && today.getDate() < birth.getDate())) {
-      age--;
-    }
+const calculateAge = (dateBirth: string): number => {
+  const today = new Date();
+  const birth = new Date(dateBirth);
+  let age = today.getFullYear() - birth.getFullYear();
+  const isBirthdayPassed =
+    today.getMonth() > birth.getMonth() ||
+    (today.getMonth() === birth.getMonth() &&
+      today.getDate() >= birth.getDate());
+
+  if (!isBirthdayPassed) {
+    age--;
+  }
     return age;
 }
 
