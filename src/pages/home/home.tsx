@@ -4,8 +4,7 @@ import { WrapperHome } from "./Home.style";
 import { Skills } from "../../components/Skills/Skills";
 import { AboutMe } from "../../components/AboutMe/AboutMe";
 
-import { Wrapper, Separator } from "../../styles/bootstrap";
-import Projects from "../../components/Projects/Projects";
+import { Wrapper } from "../../styles/bootstrap";
 
 export const Home: React.FunctionComponent = () => {
   return (
