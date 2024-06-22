@@ -62,8 +62,8 @@ export const HeadingMd = styled.h5`
 
 export const Paragraph = styled.p<IParagraph>`
   color: ${(props) => props.theme.colors.cream};
-  width: ${(props) => props.width}
-  font-size: 20px;
+  max-width: ${(props) => props.width};
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 30px;

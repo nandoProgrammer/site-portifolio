@@ -28,11 +28,11 @@ export const AboutMe: React.FunctionComponent = () => {
             <br />
             Eu Sou <Emphasis>Fernando Costa.</Emphasis>
           </HeadingLg>
-          <Paragraph width="100px">
+          <Paragraph width="530px">
             Estou na área há quase 4 anos profissionalmente, Trabalhando para
             grandes empresas e utilizando as melhores
-            <Emphasis> Tecnologias do mercado, com Segurança </Emphasis> e e
-            foco na <Emphasis>Experiência do usuário</Emphasis>.
+            <Emphasis> Tecnologias do mercado, com Segurança </Emphasis> e foco
+            na <Emphasis>Experiência do usuário</Emphasis>.
           </Paragraph>
         </div>
         <Photo photo={photoAboutMe} />
