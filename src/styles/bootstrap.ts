@@ -13,6 +13,7 @@ interface IParagraph {
   marginBottom?: string;
   marginLeft?: string;
   marginRight?: string;
+  width?: string;
 }
 
 export const Wrapper = styled.div<IWrapper>`
@@ -61,6 +62,7 @@ export const HeadingMd = styled.h5`
 
 export const Paragraph = styled.p<IParagraph>`
   color: ${(props) => props.theme.colors.cream};
+  width: ${(props) => props.width}
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
