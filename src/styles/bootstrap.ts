@@ -13,7 +13,6 @@ interface IParagraph {
   marginBottom?: string;
   marginLeft?: string;
   marginRight?: string;
-  width?: string;
 }
 
 export const Wrapper = styled.div<IWrapper>`
@@ -62,7 +61,6 @@ export const HeadingMd = styled.h5`
 
 export const Paragraph = styled.p<IParagraph>`
   color: ${(props) => props.theme.colors.cream};
-  max-width: ${(props) => props.width};
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
@@ -126,6 +124,11 @@ export const Photo = styled.div<{ photo: string }>`
   border: 2px solid ${(props) => props.theme.colors.white};
   background-color: ${(props) => props.theme.colors.white};
   background-position-x: start;
+
+  @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 export const CardProjetcWrapper = styled.div`
